@@ -15,7 +15,7 @@ permissions:
   pages: write
   id-token: write
 
-# Allow one concurrent deployment
+# Allow one concurrent deployment on github
 concurrency:
   group: 'pages'
   cancel-in-progress: true
@@ -49,3 +49,6 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
+
+
+        
